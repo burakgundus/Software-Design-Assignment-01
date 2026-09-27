@@ -13,11 +13,10 @@ public class Department {
     private String email;
     private boolean isActive;
 
-    // 1. Boş Constructor
+    // default constructor olusturma
     public Department() {
     }
 
-    // 2. Dolu Constructor
     public Department(UUID id, String code, String name, Faculty faculty) {
         this.id = id;
         this.code = code;
@@ -26,7 +25,6 @@ public class Department {
         this.isActive = true;
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

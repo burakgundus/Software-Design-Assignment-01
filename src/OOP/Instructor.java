@@ -5,7 +5,6 @@ import java.util.UUID;
 
 public class Instructor {
 
-    // Şemaya göre belirlenen alanlar[cite: 1]
     private UUID id;
     private String employeeNo;
     private String nationalId;
@@ -18,21 +17,18 @@ public class Instructor {
     private LocalDate hireDate;
     private boolean isActive;
 
-    // 1. Boş Constructor
     public Instructor() {
     }
 
-    // 2. Dolu Constructor
     public Instructor(UUID id, String employeeNo, String firstName, String lastName, InstructorTitle title) {
         this.id = id;
         this.employeeNo = employeeNo;
         this.firstName = firstName;
         this.lastName = lastName;
         this.title = title;
-        this.isActive = true; // Varsayılan olarak aktif başlasın
+        this.isActive = true; // default olarak aktif olsun
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

@@ -6,7 +6,6 @@ import java.util.UUID;
 
 public class Student {
     
-    // Değişkenler (Fields)
     private UUID id;
     private String studentNumber;
     private String nationalId;
@@ -24,11 +23,9 @@ public class Student {
     private String photoUrl;
     private LocalDateTime createdAt;
 
-    // 1. Boş Constructor
     public Student() {
     }
 
-    // 2. Dolu Constructor
     public Student(UUID id, String studentNumber, String firstName, String lastName, Program program, Status status) {
         this.id = id;
         this.studentNumber = studentNumber;
@@ -39,7 +36,6 @@ public class Student {
         this.createdAt = LocalDateTime.now();
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 
@@ -88,7 +84,6 @@ public class Student {
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 
-    // toString Metodu
     @Override
     public String toString() {
         return "Öğrenci: " + firstName + " " + lastName + " | No: " + studentNumber + " | Durum: " + status;

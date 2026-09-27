@@ -5,16 +5,14 @@ import java.util.UUID;
 public class CoursePrerequisite {
 
     private UUID id;
-    private Course course;             // Hangi ders?
-    private Course prerequisiteCourse; // Önkoşul olan ders
-    private PrerequisiteType type;     // Enum (MANDATORY, RECOMMENDED)
+    private Course course;             
+    private Course prerequisiteCourse; 
+    private PrerequisiteType type;     
     private String minGrade;
 
-    // 1. Boş Constructor
     public CoursePrerequisite() {
     }
 
-    // 2. Dolu Constructor
     public CoursePrerequisite(UUID id, Course course, Course prerequisiteCourse, PrerequisiteType type) {
         this.id = id;
         this.course = course;
@@ -22,7 +20,6 @@ public class CoursePrerequisite {
         this.type = type;
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

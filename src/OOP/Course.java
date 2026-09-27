@@ -7,20 +7,18 @@ public class Course {
     private UUID id;
     private String code;
     private String name;
-    private Department department; // FK referansı: Hangi bölüme ait?
+    private Department department; 
     private int credits;
     private int theoryHours;
     private int labHours;
-    private CourseType courseType; // Enum (Mandatory, Elective vb.)
+    private CourseType courseType; 
     private String language;
     private String description;
     private boolean isActive;
 
-    // 1. Boş Constructor
     public Course() {
     }
 
-    // 2. Dolu Constructor
     public Course(UUID id, String code, String name, Department department, int credits, CourseType courseType) {
         this.id = id;
         this.code = code;
@@ -31,7 +29,6 @@ public class Course {
         this.isActive = true;
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

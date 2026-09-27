@@ -7,14 +7,13 @@ public class Program {
     private UUID id;
     private String code;
     private String name;
-    // private Department department; 
-    private DegreeLevel degreeLevel; // Senin oluşturduğun enum
+     private Department department; 
+    private DegreeLevel degreeLevel;
     private int totalCredits;
     private int durationYears;
     private String language;
     private boolean isActive;
 
-    // Boş Constructor
     public Program() {
     }
 

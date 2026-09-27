@@ -9,7 +9,7 @@ public class AcademicTerm {
     private String code;
     private String name;
     private String academicYear;
-    private Semester semester; // Oluşturduğun Semester enum'ı (FALL, SPRING, SUMMER)
+    private Semester semester; // semester enum
     private LocalDate startDate;
     private LocalDate endDate;
     private LocalDate registrationStart;
@@ -17,11 +17,9 @@ public class AcademicTerm {
     private LocalDate addDropEnd;
     private boolean isActive;
 
-    // 1. Boş Constructor
     public AcademicTerm() {
     }
 
-    // 2. Dolu Constructor
     public AcademicTerm(UUID id, String code, String name, String academicYear, Semester semester) {
         this.id = id;
         this.code = code;
@@ -31,7 +29,6 @@ public class AcademicTerm {
         this.isActive = true;
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

@@ -5,17 +5,15 @@ import java.util.UUID;
 public class ProgramCourse {
 
     private UUID id;
-    private Program program;       // Hangi program?
-    private Course course;         // Hangi ders?
-    private int semesterOrder;     // Kaçıncı yarıyıl (1-8)
-    private CourseType courseType; // Zorunlu/Seçmeli
+    private Program program;       
+    private Course course;        
+    private int semesterOrder;     
+    private CourseType courseType; 
     private boolean isActive;
 
-    // 1. Boş Constructor
     public ProgramCourse() {
     }
 
-    // 2. Dolu Constructor
     public ProgramCourse(UUID id, Program program, Course course, int semesterOrder, CourseType courseType) {
         this.id = id;
         this.program = program;
@@ -25,7 +23,6 @@ public class ProgramCourse {
         this.isActive = true;
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 

@@ -5,7 +5,6 @@ import java.util.UUID;
 
 public class Faculty {
 
-    // Şemadaki[cite: 1] tüm alanlar eklendi
     private UUID id;
     private String code;
     private String name;
@@ -15,11 +14,9 @@ public class Faculty {
     private boolean isActive;
     private LocalDateTime createdAt;
 
-    // 1. Boş Constructor
     public Faculty() {
     }
 
-    // 2. Dolu Constructor (Temel alanlar için)
     public Faculty(UUID id, String code, String name) {
         this.id = id;
         this.code = code;
@@ -27,7 +24,6 @@ public class Faculty {
         this.createdAt = LocalDateTime.now();
     }
 
-    // Getter ve Setter Metodları
     public UUID getId() { return id; }
     public void setId(UUID id) { this.id = id; }
 
